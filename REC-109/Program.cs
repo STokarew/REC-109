@@ -9,17 +9,17 @@ namespace REC_109
         {
             static void Main(string[] args)
             {
-                Animal cat = new Animal("мяу");
-                Animal dog = new Animal("гав");
-                Animal cow = new Animal("муу");
-                Animal cock = new Animal("кококо");
+                Cats cat = new Cats("мяу");
+                Dogs dog = new Dogs("гав");
+                Cows cow = new Cows("муу");
+                Cocks cock = new Cocks("кококо");
 
                 List<Animal> animals = new List<Animal>() { cat, dog, cow, cock };
                 foreach (Animal a in animals)
                 {
                     a.ToTolk();
                 }
-
+            Console.ReadKey();
             }
        }
 }

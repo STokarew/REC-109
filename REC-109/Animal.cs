@@ -6,20 +6,14 @@ using System.Threading.Tasks;
 
 namespace REC_109
 {
-    class Animal
+    abstract class Animal
     {
-        public string say;
-        public Animal(string _say)
+        public string Say { get; }
+        public Animal(string say)
         {
-            say = _say;
+            Say = say;
         }
-        public Animal(Animal a)
-        {
-            say = a.say;
-        }
-        public void ToTolk()
-        {
-            Console.WriteLine(say);
-        }
+        public void ToTolk() => Console.WriteLine(Say);
+
     }
 }
